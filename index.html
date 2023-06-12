@@ -9,11 +9,25 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="grid-container">
-    </div>
-    <div id="buttons">
-        <button id="make">Make Grid</button>
-        <input type="color" value="#000000" id="color">
+    <div id="container">
+        <div id="grid-container" draggable="false"></div>
+        <div id="buttons">
+            <div id="dens">
+                <label id="dens-label" for="density">Grid density</label>
+                <input type="range" min="16" max="64" value="32" step="4" name="dens" id="density">
+            </div>
+            <div id="col">
+                <label for="color">Brush color</label>
+                <input type="color" value="#000000" name= "color" id="color">
+            </div>
+            <div id="str">
+                <label for="strength">Brush strength</label>
+                <input type="range" min="1" max="100" name= "strength" value="100" id="strength">
+            </div>
+            <div id="era">
+                <button id="eraser">Eraser</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

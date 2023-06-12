@@ -1,18 +1,21 @@
 body {
     background-color: lightgray;
+    font-family: roboto;
+    font-weight: 500;
+    color: #646363;
 }
+
 
 #grid-container {
     width: 800px;
     height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
+    margin-right: 200px;
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    
-
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 15%);
 }
 
 .pixel {
@@ -23,8 +26,34 @@ body {
     box-shadow: inset 0 0 3px #000000;
 }
 
+#container {
+    width: 1300px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    justify-content: space-between;
+    
+    
+}
+
 #buttons {
-    margin: 20px;
-    text-align: center;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 40px;
+    width: 200px;
+    height: 800px;
+    align-items: left;
+    justify-content: top;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 15%);
+}
+
+#buttons * {
+    margin-bottom: 15px;
+    color: inherit;
 }
 
